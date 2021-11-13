@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(48, 18, 102);
+    color: white;
+}
+.btn.btn-danger{
+    justify-self: flex-end;
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end;
+}
+.text-black{
+    font-size: 1.1rem;
+}
+.cards-container{
+    color: black;
+    overflow-x: hidden;
+}
+.cards-container .card{
+    margin: 0px 20px;
+}
+.title-container{
+    font-family: monospace;
+}
+.card{
+    width: 17rem;
+}
+
