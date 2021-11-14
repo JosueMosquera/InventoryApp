@@ -35,15 +35,15 @@ export const AddScreen = () => {
           <form onSubmit={handleAddInventory}>
 <div className="mb-3">
   <label htmlFor="nameAdd" className="form-label">Nombre del Objeto</label>
-  <input type="text" className="form-control" id="nameAdd"  name='product' onChange={handleInputChange}/>
+  <input type="text" className="form-control" id="nameAdd"  name='product' onChange={handleInputChange} required/>
 </div>
 <div className="mb-3">
   <label htmlFor="price" className="form-label">Precio Del Objeto</label>
-  <input type="float" className="form-control" id="price" name='price' onChange={handleInputChange} min='0'/>
+  <input type="float" className="form-control" id="price" name='price' onChange={handleInputChange} min='0' required/>
 </div>
 <div className="mb-3">
   <label htmlFor="stock" className="form-label">Cantidad a Registrar</label>
-  <input type="float" className="form-control" id="stock" name='stock' onChange={handleInputChange} min='1'/>
+  <input type="float" className="form-control" id="stock" name='stock' onChange={handleInputChange} min='1' required/>
 </div>
 <button type="submit" className="btn btn-primary">Agregar al Inventario</button>
 
