@@ -22,7 +22,7 @@ export const HomeScreen = () => {
     ):(
       <div className="cards-container mt-4 mb-3">
          <div className="title-container" style={{color:'white',width:'100vw',textAlign:'center',marginBottom:'20px'}}>
-            <h1>Your Inventory</h1>
+            <h1>Mi Inventario</h1>
           </div>
       <div className="row row-cols-1 row-cols-md-3 g-4">
         {products.length <= 0 ? (

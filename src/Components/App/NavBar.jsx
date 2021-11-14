@@ -6,7 +6,7 @@ import {  startLogout } from '../../actions/auth'
 
 
 export const NavBar = () => {
-    const {name,uid} = useSelector(state => state.auth)
+    const {name} = useSelector(state => state.auth)
     const dispatch = useDispatch()
     const handleLogout = ()=>{
         dispatch(startLogout())
@@ -31,7 +31,7 @@ export const NavBar = () => {
   <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div className="navbar-nav d-flex">
     <Link className="nav-link" to={`/profile/${name}`} >Mi Perfil</Link>
-    <Link className="nav-link" to='/' >Home</Link>
+    <Link className="nav-link" to='/' >Mi Inventario</Link>
       <Link className="nav-link" to='/addInventory' >Agregar Al Inventario</Link>
       <button className="btn btn-danger" onClick={handleLogout}>Logout</button>
     </div>

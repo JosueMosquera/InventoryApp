@@ -53,7 +53,7 @@ export const startUpdateProduct  = (product)=>{
             const saveProduct = await doc(db,`${uid}/${email}/inventory/${product.id}`)
             await updateDoc(saveProduct,productToFirestore)
             dispatch(refreshProduct(product.id,productToFirestore))
-            Swal.fire('Saved',product.product,'success')
+            Swal.fire('Guardado',product.product,'success')
         }
         catch(error){
             throw new Error(error)
@@ -76,6 +76,7 @@ export const startDeleting = (id)=>{
         const refDoc = doc(db,`${uid}/${email}/inventory/${id}`)
         await deleteDoc(refDoc)
         dispatch(deleteProduct(id))
+        Swal.fire('Eliminado','objeto eliminado del inventario','success')
     }
 }
 export const deleteProduct = (id)=>({

@@ -53,7 +53,7 @@ export const loginWithEmailPassword = (email,password)=>{
         try {
             const {user} = await signInWithEmailAndPassword(auth,email,password)
             dispatch(login(user.uid,user.displayName,user.email,user.photoURL))
-            Swal.fire('Succes',`Bienvenido ${user.displayName}`,'success')
+            Swal.fire('JA Inventory',`Bienvenido ${user.displayName}`,'success')
         } catch (error) {
             Swal.fire('Error',error.message,'error')
         }
@@ -70,7 +70,7 @@ export const loginWithGoogle = ()=>{
             dispatch(login(user.uid,user.displayName,user.email,user.photoURL))
             
         } catch (error) {
-            Swal.fire('error',error,'error')
+          console.log(error)
         }
     }
 }

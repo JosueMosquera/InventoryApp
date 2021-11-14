@@ -58,15 +58,15 @@ const{product,price,stock} =formValues
           <form onSubmit={handleSubmitForm}>
 <div className="mb-3">
   <label htmlFor="nameAdd" className="form-label">Nombre del Objeto</label>
-  <input type="text" className="form-control" id="nameAdd"  name='product' onChange={handleInputChange}  value={product} />
+  <input type="text" className="form-control" id="nameAdd"  name='product' onChange={handleInputChange}  value={product} autoComplete='off'/>
 </div>
 <div className="mb-3">
   <label htmlFor="price" className="form-label">Precio Del Objeto</label>
-  <input type="float" className="form-control" id="price" name='price' onChange={handleInputChange} min='0' value={price}/>
+  <input type="float" className="form-control" id="price" name='price' onChange={handleInputChange} min='0' value={price} autoComplete='off'/>
 </div>
 <div className="mb-3">
   <label htmlFor="stock" className="form-label">Cantidad a Registrar</label>
-  <input type="float" className="form-control" id="stock" name='stock' onChange={handleInputChange} min='1' value={stock}/>
+  <input type="float" className="form-control" id="stock" name='stock' onChange={handleInputChange} min='1' value={stock} autoComplete='off'/>
 </div>
 <button type="submit" className="btn btn-primary">Guardar</button>
 

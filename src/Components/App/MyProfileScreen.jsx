@@ -13,9 +13,9 @@ export const MyProfileScreen = () => {
             <img src={image_url} alt="avatar"  className='avatar-profile'/>
            </div>
            <div className="stats-profile">
-                <p className='stats-text'>Your Name: {name}</p>
+                <p className='stats-text'>username: {name}</p>
                 <p className='stats-text'>Email:{email}</p>
-                <p className='stats-text'>Objects in Your Inventory: {products.length}</p>
+                <p className='stats-text'>Objetos en el Inventario: {products.length}</p>
            </div>
         </div>
         </div>
