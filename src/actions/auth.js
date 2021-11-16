@@ -68,7 +68,7 @@ export const loginWithGoogle = ()=>{
         try {
             const {user} = await signInWithPopup(auth,googleAuthProvider)
             dispatch(login(user.uid,user.displayName,user.email,user.photoURL))
-            Swal.fire('Bienvenido',user.displayName,'success')
+            Swal.fire('JA Inventory',`Bienvenido${user.displayName}`,'success')
             
         } catch (error) {
           console.log(error)
